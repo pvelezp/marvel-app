@@ -1,6 +1,4 @@
-import { Character } from './types/character'
-
-const list: Character[] = [
+const list = [
   {
     id: 1011334,
     name: '3-D Man',
