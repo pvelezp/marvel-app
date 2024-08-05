@@ -50,7 +50,7 @@ const CharacterDetail = ({ character, characterComics, error }: CharacterType) =
         <title>Marvel Character Detail</title>
       </Head>
 
-      <section className={styles.detail__banner}>
+      <section className={styles.detailBanner}>
         <Image
           className={styles.detailBannerImage}
           height={320}

@@ -1,8 +1,9 @@
 @import '../../styles/variables';
 
 .detail {
+  background-color: red;
   &Banner {
-    background-color: $black;
+    background-color: black;
     display: flex;
     justify-content: center;
     gap: 2rem;
