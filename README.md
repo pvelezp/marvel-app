@@ -32,13 +32,7 @@ This project is a web application that showcases Marvel characters using data fr
    git clone https://github.com/pvelezp/marvel-app.git
    ```
 
-2. Navigate to the project directory:
-
-   ```bash
-   cd marvel-characters-app
-   ```
-
-3. Install the dependencies:
+2. Install the dependencies:
 
    ```bash
    npm install
@@ -52,13 +46,7 @@ This project is a web application that showcases Marvel characters using data fr
 
 ## Running the Application
 
-1. Create a `.env.local` file at the root of the project with your Marvel API credentials:
-
-   ```bash
-   NEXT_PUBLIC_MARVEL_API_KEY=your_marvel_api_key
-   ```
-
-2. Start the development server:
+1. Start the development server:
 
    ```bash
    npm run dev
@@ -70,7 +58,7 @@ This project is a web application that showcases Marvel characters using data fr
    yarn dev
    ```
 
-3. Open your browser and navigate to `http://localhost:3000` to view the application.
+2. Open your browser and navigate to `http://localhost:3000` to view the application.
 
 ## Project Architecture and Structure
 
