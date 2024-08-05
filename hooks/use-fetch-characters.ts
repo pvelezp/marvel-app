@@ -1,4 +1,5 @@
 import axios, { CancelTokenSource } from 'axios'
+import axiosInstance from 'api/axios-instance'
 import { useEffect, useMemo, useState } from 'react'
 import { Character } from '../types/character'
 import useDebounce from './use-debounce'
@@ -27,7 +28,7 @@ const useFetchCharacters = (
       setError(null)
 
       try {
-        const response = await axios.get('', {
+        const response = await axiosInstance.get('', {
           params: { nameStartsWith: debouncedSearchText },
           cancelToken: source.token,
         })
