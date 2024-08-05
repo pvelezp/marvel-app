@@ -1,0 +1,23 @@
+.characters {
+  padding: 1rem;
+
+  &FavoriteTitle {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  &Results {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 12px;
+  }
+
+  &List {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(172px, 1fr));
+    gap: 16px;
+    width: 100%;
+  }
+}

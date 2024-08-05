@@ -1,0 +1,113 @@
+@import '../../styles/variables';
+
+.detail {
+  &Banner {
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    @media (max-width: 590px) {
+      flex-direction: column;
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+    }
+
+    &Image {
+      object-fit: cover;
+
+      @media (max-width: 590px) {
+        width: 100%;
+      }
+    }
+
+    &Info {
+      color: $white;
+      width: 100%;
+      max-width: 620px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 1rem 1rem;
+
+      &Title {
+        font-size: 40px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      > h4 {
+        margin-bottom: 0;
+      }
+
+      > h6 {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      &Heart {
+        height: min-content;
+      }
+    }
+  }
+
+  &Comics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+
+    &Title {
+      margin-bottom: 1rem;
+    }
+
+    &List {
+      display: flex;
+      overflow-x: auto;
+      min-height: 350px;
+      gap: 1rem;
+
+      &::-webkit-scrollbar {
+        height: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $red;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: lightgray;
+      }
+
+      /* For Firefox */
+      & {
+        scrollbar-width: thin;
+        scrollbar-color: $red transparent;
+      }
+    }
+  }
+
+  &Comic {
+    min-width: 164px;
+    max-width: 180px;
+    height: 268px;
+
+    &Title {
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 0.4rem;
+      margin-bottom: 0.5rem;
+      line-height: 17.63px;
+    }
+
+    &Year {
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+}

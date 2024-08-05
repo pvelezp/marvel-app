@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: $black;
+  color: white;
+  padding: 1rem;
+
+  &Favorites {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    > p {
+      margin-bottom: 0;
+    }
+  }
+}

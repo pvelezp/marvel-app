@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+.search {
+  border-bottom: 1px solid $black;
+  display: flex;
+  gap: 0.5rem;
+
+  &Input {
+    border: none;
+    width: 100%;
+    outline: 0;
+
+    &::placeholder {
+      text-transform: uppercase;
+      color: $gray-500;
+    }
+  }
+}
