@@ -21,7 +21,6 @@ This project is a web application that showcases Marvel characters using data fr
 - [Testing](#testing)
 - [Formatting and Linting](#formatting-and-linting)
 - [API Integration](#api-integration)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Installation
@@ -131,6 +130,12 @@ The project follows a modular and scalable architecture with the following struc
   npm run format
   ```
 
+  - To apply both eslint and prettier, run:
+
+  ```bash
+  npm run lint-and-format
+  ```
+
 ## Image Optimization
 
 Next.js provides built-in image optimization to enhance performance and user experience:
@@ -150,4 +155,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-This README file should provide a comprehensive overview of your project and guide users through installation, usage, and contribution processes.
+This README file should provide a comprehensive overview of your project and guide users through installation, usage processes.
